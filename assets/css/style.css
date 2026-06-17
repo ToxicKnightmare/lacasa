@@ -24,6 +24,9 @@ a:hover {
 .showMobile {
     display: none;
 }
+.flip {
+    transform: rotate(180deg);
+}
 
 .page-wrapper {
     font-family: 'Raleway', sans-serif;
@@ -85,7 +88,7 @@ nav {
     color: #F5EDD8;
 }
 
-@media (max-width: 778px) {
+@media (max-width: 640px) {
     .showDesktop {
         display: none
     }
@@ -178,4 +181,59 @@ nav {
 }
 .hero-button-view-menu:hover {
     background: #F5EDD8;
+}
+
+/* CORTES CSS */
+.cortes-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url(../images/lacasa-argentina-cortes-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 32px;
+    line-height: 74px;
+}
+.cortes-header {
+    justify-content: center;
+    max-width: 1280px;
+    margin: auto;
+    gap: 24px;
+}
+.cortes-header img {
+    margin-top: 6px;
+}
+.cortes-header-text {
+    font-family: "Playfair Display", serif;
+    font-size: 56px;
+    color: #F5EDD8;
+    border-bottom: 2px solid #C9A060
+}
+.cortes-subheader {
+    text-align: center;
+}
+.cortes-subheader-text {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    color: #C9A060;
+    margin: auto;
+    line-height: 40px;
+}
+.cortes-grid-wrapper {
+    margin-top: 32px;
+}
+.cortes-grid-text {
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+}
+.cortes-grid-brass-divider {
+    height: 10px;
+    background-image: url(../images/lacasa-brass-divider.png);
+    background-position: center;
+    width: 82%;
+    margin: auto;
 }

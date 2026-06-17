@@ -19,6 +19,7 @@
             <?php
                 include 'containers/header.html';
                 include 'containers/hero.html';
+                include 'containers/cortes.html';
             ?>
         </div>
     </body>
