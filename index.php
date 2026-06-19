@@ -25,6 +25,8 @@
                 include 'containers/hero.html';
                 include 'containers/cortes.html';
                 include 'containers/nosotros.html';
+                include 'containers/menu.html';
+                include 'containers/reserva.html';
             ?>
         </div>
     </body>

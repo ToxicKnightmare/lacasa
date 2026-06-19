@@ -358,3 +358,109 @@ nav {
     margin: 12px auto;
     font-weight: 500;
 }
+
+/* MENU CSS */
+.menu-wrapper {
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url(../images/lacasa-argentina-menu-background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: -75px;
+    padding-top: 68px;
+    z-index: 10;
+}
+.menu-header {
+    justify-content: center;
+    max-width: 1280px;
+    margin: auto;
+    gap: 24px;
+    line-height: 74px;
+}
+.menu-header img {
+    margin-top: 6px;
+}
+.menu-header-text {
+    font-size: 56px;
+    color: #442818;
+    border-bottom: 2px solid #442818;
+}
+.menu-subheader {
+    text-align: center;
+}
+.menu-subheader-text {
+    font-size: 26px;
+    color: #442818;
+    margin: auto;
+    line-height: 40px;
+}
+.menu-grid-wrapper {
+    margin-top: 10px;
+}
+.menu-grid-item {
+    text-align: center;
+}
+.menu-item-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #442818;
+    width: 90%;
+    margin: auto;
+    border-bottom: 2px solid #442818;
+
+}
+.menu-item-subtitle {
+    font-size: 24px;
+    color: #b63903;
+    text-shadow: 1px 1px 0.5px #000000;
+}
+.menu-item-image {
+    max-height: 180px;
+    position: relative;
+    top: -20px;
+}
+.menu-item-image img {
+    max-height: 250px;
+}
+.menu-item-button {
+    position: relative;
+    top: -10px;
+    z-index: 15;
+}
+.menu-view-more-outside {
+    max-width: 255px;
+    width: 100%;
+    margin: auto;
+    height: 48px;
+    max-height: 48px;
+    border: 1px solid #C9A060;
+    border-bottom: 2px solid #C9A060;
+    background-color: #30150a;
+    padding: 4px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
+}
+.menu-view-more-inside {
+    background: linear-gradient(to bottom, #442818 0%, #1A1007 100%);
+    border: 2px dashed #C9A060;
+    border-bottom: 1px dashed #C9A060;
+    line-height: 34px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1px #000000;
+}
+
+/* RESERVA CSS*/
+.reserva-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url(../images/lacasa-argentina-cortes-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 32px;
+}
