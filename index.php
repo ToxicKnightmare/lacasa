@@ -14,8 +14,8 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="assets/css/bootstrap-icons.css"/>
         <link rel="stylesheet" href="assets/css/style.css"/>
-
         <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script> 
+        <script src="assets/js/main.js" type="text/javascript"></script>
 
     </head>
     <body>
@@ -27,7 +27,9 @@
                 include 'containers/nosotros.html';
                 include 'containers/menu.html';
                 include 'containers/reserva.html';
+                include 'containers/footer.html';
             ?>
         </div>
+        <script src="assets/js/footer.js" type="text/javascript"></script>
     </body>
 </html>

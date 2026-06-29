@@ -304,7 +304,6 @@ nav {
 .nosotros-right {
     width: 50%;
     min-height: 70vh;
-    background-image: url(../images/lacasa-nosotros-parchment-bkgd.png);
     text-align: center;
 }
 .nosotros-right-title {
@@ -459,8 +458,13 @@ nav {
     min-height: 100vh;
     align-items: center;
     background-image: url(../images/lacasa-argentina-cortes-background.png);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 32px;
+}
+
+/* FOOTER CSS */
+#footer-section {
+    font-family: 'Raleway', sans-serif;
 }
