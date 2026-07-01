@@ -27,6 +27,7 @@
                 include 'containers/nosotros.html';
                 include 'containers/menu.html';
                 include 'containers/reserva.html';
+                include 'containers/social.html';
                 include 'containers/footer.html';
             ?>
         </div>

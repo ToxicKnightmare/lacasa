@@ -561,6 +561,34 @@ nav {
     font-style: italic;
     font-size: 16px;
 }
+
+
+/* SOCIAL CSS */
+.social-wrapper {
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    /*min-height: 100vh;*/
+    align-items: center;
+    background-image: url(../images/lacasa-argentina-menu-background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: -75px;
+    padding-top: 68px;
+    z-index: 10;
+}
+.social-container {
+    justify-content: center;
+    max-width: 1280px;
+    margin: auto;
+    gap: 24px;
+    line-height: 74px;
+}
+
+
+
+
 /* FOOTER CSS */
 #footer-section {
     font-family: 'Raleway', sans-serif;
