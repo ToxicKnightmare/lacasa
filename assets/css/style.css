@@ -593,3 +593,48 @@ nav {
 #footer-section {
     font-family: 'Raleway', sans-serif;
 }
+.footer-wrapper {
+    max-width: 1280px;
+    margin: auto;
+    padding: 40px 0px;
+}
+.footer-container {
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    margin-bottom: 26px;
+}
+.footer-social {
+    width: 33%;
+    text-align: right;
+    color: #C9A060;
+    font-size: 18px;
+}
+.footer-social-icon-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-top: 12px
+}
+.instagram a, .instagram a:hover,
+.facebook a, .facebook a:hover,
+.x a, .x a:hover {
+    color: rgba(231, 233, 234, 1.00)
+}
+.footer-links {
+    width: 33%;
+}
+.footer-links-title {
+    font-size: 18px;
+    color: #C9A060;
+}
+.footer-info {
+    width: 33%;
+    text-align: left;
+}
+.footer-info .title {
+    color: #C9A060;
+}
+.footer-copyright {
+    font-size: 13px;
+}
