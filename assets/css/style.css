@@ -461,9 +461,106 @@ nav {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
-    padding-top: 32px;
+    padding-top: 90px;
 }
-
+.reserva-content-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 64px;
+    max-width: 1280px;
+    margin: auto;
+}
+.reserva-map-container {
+    background-image: url(../images/lacasa-map-frame.png);
+    width: 59%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 52px 44px 0px 44px;
+    box-shadow: 20px 16px 28px rgba(0, 0, 0, 0.6);
+}
+.reserva-map-container iframe {
+    width: 100%;
+    height: 504px;
+    border: 0px
+}
+.reserva-map-photo-section {
+    position: relative;
+    top: -35px;
+    left: 5px;
+}
+.reserva-map-photo-section img {
+    width: 43%;
+}
+.reserva-info-section {
+    background-image: url(../images/lacasa-reserva-parchmant-bkgd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 39%;
+    text-align: center;
+    color: #442818;
+}
+.reserva-body-section {
+    margin-top: 40px;
+    padding: 0px 54px;
+}
+.reserva-title {
+    font-size: 48px;
+} 
+.reserva-divider {
+    height: 12px;
+    display: flex;
+    justify-content: center;
+} 
+.reserva-divider-left, .reserva-divider-right {
+    width: 33%;
+    align-self: center;
+}
+.reserva-divider-left div {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to left, #230D02 40%, transparent 100%);
+}
+.reserva-divider-center {
+    margin: 0 4px;
+}
+.reserva-divider-center img {
+    position: relative;
+    top: -8px;
+}
+.reserva-divider-right div {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #230D02 40%, transparent 100%);
+}
+.reserva-subtitle {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+.reserva-phone-text, .reserva-phone-number,
+.reserva-address-title, .reserva-address {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
+}
+.reserva-phone-number, .reserva-address {
+    margin-bottom: 22px;
+}
+.reserva-phone-text, .reserva-address-title, .reserva-horas-title {
+    margin-top: 10px;
+}
+.reserva-horas-title {
+    font-size: 22px;
+    font-weight: 500;
+}
+.reserva-horas {
+    font-size: 20px;
+    font-weight: 500;
+}
+.reserva-closed {
+    font-style: italic;
+    font-size: 16px;
+}
 /* FOOTER CSS */
 #footer-section {
     font-family: 'Raleway', sans-serif;
