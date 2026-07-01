@@ -358,6 +358,8 @@ nav {
     font-weight: 500;
 }
 
+
+
 /* MENU CSS */
 .menu-wrapper {
     justify-content: center;
@@ -449,6 +451,93 @@ nav {
     line-height: 34px;
     text-align: center;
     text-shadow: 1.5px 1.5px 1px #000000;
+}
+
+/* EVENTOS CSS */
+.eventos-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    background-image: url(../images/lacasa-argentina-nosotros-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: 32px;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+.eventos-container {
+    width: 100%;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+.eventos-left {
+    width: 50%;
+    min-height: 70vh;
+    text-align: center;
+}
+.eventos-left-title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #230D02;
+    line-height: 100px
+}
+.eventos-left .dark-brown-divider {
+    width: 80%;
+    margin: auto;
+}
+.eventos-left-subtitle {
+    color: #b63903;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+    margin-top: 8px;
+}
+.eventos-left-message {
+    color: #230D02;
+    font-size: 28px;
+    width: 75%;
+    margin: 12px auto;
+    font-weight: 500;
+}
+.eventos-graphic-divider {
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    margin-top: 12px;
+}
+.eventos-graphic-divider-left {
+    width: 33%;
+    align-self: center;
+}
+.eventos-graphic-divider-left div {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to left, #230D02 40%, transparent 100%);
+}
+.eventos-graphic-divider-center {
+    margin: 0 4px;
+}
+.eventos-graphic-divider-right {
+    width: 33%;
+    align-self: center;
+}
+.eventos-graphic-divider-right div {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #230D02 40%, transparent 100%);
+}
+.eventos-right {
+    width: 50%;
 }
 
 /* RESERVA CSS*/
