@@ -14,16 +14,16 @@
             <div class="row g-3">
                 <!-- Repeat for 9 items -->
                 <div class="col-lg-4 col-md-4 col-12 menu-grid-item">
-                    <div class="menu-item-title">Aves y Camarones</div>
+                    <div class="menu-item-title">Aves</div>
                     <div class="menu-item-subtitle">Sabores de Fuego y Mar</div>
                     <div class="menu-item-image"><img src="assets/images/lacasa-milanesadepollo.png"></div>
                     <div class="menu-item-button">
                         <div class="menu-view-more-outside">
-                            <a href="#">
-                                <div class="menu-view-more-inside uppercase">
-                                    Ver Aves y Camarones
-                                </div>
-                            </a>
+                            <div class="menu-view-more-inside uppercase">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menu-aves-modal">
+                                    Ver Aves
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -33,25 +33,25 @@
                     <div class="menu-item-image"><img src="assets/images/lacasa-bariloche-veracruz.png"></div>
                     <div class="menu-item-button">
                         <div class="menu-view-more-outside">
-                            <a href="#">
-                                <div class="menu-view-more-inside uppercase">
+                            <div class="menu-view-more-inside uppercase">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menu-pescado-modal">
                                     Ver Pescado
-                                </div>
-                            </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12 menu-grid-item">
-                    <div class="menu-item-title">Especialidades de la Casa</div>
+                    <div class="menu-item-title">Camarones</div>
                     <div class="menu-item-subtitle">Inspirado en la Tradición</div>
                     <div class="menu-item-image"><img src="assets/images/lacasa-camaroneslacoco.png"></div>
                     <div class="menu-item-button">
                         <div class="menu-view-more-outside">
-                            <a href="#">
-                                <div class="menu-view-more-inside uppercase">
-                                    Ver Especialidades
-                                </div>
-                            </a>
+                            <div class="menu-view-more-inside uppercase">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menu-camarones-modal">
+                                    Ver Camarones
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -61,11 +61,12 @@
                     <div class="menu-item-image"><img src="assets/images/lacasa-pizza-empanadas.png"></div>
                     <div class="menu-item-button">
                         <div class="menu-view-more-outside">
-                            <a href="#">
-                                <div class="menu-view-more-inside uppercase">
+                            <div class="menu-view-more-inside uppercase">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#menu-pizza-modal">
                                     Ver Pizzas y Empanadas
-                                </div>
-                            </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -75,11 +76,12 @@
                     <div class="menu-item-image"><img src="assets/images/lacasa-lasagna.png"></div>
                     <div class="menu-item-button">
                         <div class="menu-view-more-outside">
-                            <a href="#">
-                                <div class="menu-view-more-inside uppercase">
+                            <div class="menu-view-more-inside uppercase">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#menu-italia-modal">
                                     Ver de Italia
-                                </div>
-                            </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,14 +91,192 @@
                     <div class="menu-item-image"><img src="assets/images/lacasa-caesarsalad.png"></div>
                     <div class="menu-item-button">
                         <div class="menu-view-more-outside">
-                            <a href="#">
-                                <div class="menu-view-more-inside uppercase">
+                            <div class="menu-view-more-inside uppercase">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#menu-ensalads-modal">
                                     Ver Ensaladas
-                                </div>
-                            </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="menu-aves-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aves</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="nosotros-graphic-divider">
+                        <div class="nosotros-graphic-divider-left">
+                            <div></div>
+                        </div>
+                        <div class="nosotros-graphic-divider-center">
+                            <img src="assets/images/lacasa-nosotros-pretty-divider.png">
+                        </div>
+                        <div class="nosotros-graphic-divider-right">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="modal-body-content">
+                        <p>Pechuga de Pollo Portrfia (Plancha)</p>
+                        <p>Pechuga de Pollo Iguazú (Rellena)</p>
+                        <p>Milanesa de Pollo de la Abuela</p>
+                    </div>
+                </div>
+                <div class="modal-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="menu-pescado-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pescado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="nosotros-graphic-divider">
+                        <div class="nosotros-graphic-divider-left">
+                            <div></div>
+                        </div>
+                        <div class="nosotros-graphic-divider-center">
+                            <img src="assets/images/lacasa-nosotros-pretty-divider.png">
+                        </div>
+                        <div class="nosotros-graphic-divider-right">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="modal-body-content">
+                        <p>Filete Bariloche (Salmon)</p>
+                        <p>Filete Patagonia (Atún)</p>
+                        <p>Al Mojo de Ajo</p>
+                        <p>A la Veracruzana</p>
+                        <p>Empanizados</p>
+                    </div>
+                </div>
+                <div class="modal-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="menu-camarones-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Camarones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="nosotros-graphic-divider">
+                        <div class="nosotros-graphic-divider-left">
+                            <div></div>
+                        </div>
+                        <div class="nosotros-graphic-divider-center">
+                            <img src="assets/images/lacasa-nosotros-pretty-divider.png">
+                        </div>
+                        <div class="nosotros-graphic-divider-right">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="modal-body-content">
+                        <p>Camarones Al Coco (<span class="small-menu-text"><i>Especialidades de la Casa</i></span>)</p>
+                        <p>Al Mojo de Ajo</p>
+                        <p>Empanizados</p>
+                        <p>A la Veracruzana</p>
+                    </div>
+                </div>
+                <div class="modal-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="menu-pizza-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pizzas y Empanadas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="nosotros-graphic-divider">
+                        <div class="nosotros-graphic-divider-left">
+                            <div></div>
+                        </div>
+                        <div class="nosotros-graphic-divider-center">
+                            <img src="assets/images/lacasa-nosotros-pretty-divider.png">
+                        </div>
+                        <div class="nosotros-graphic-divider-right">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="modal-body-content">
+                        <p>Pizza Familiar</p>
+                        <p>Pizza Mediana</p>
+                        <p>Empanadas (c/u)<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Orden de 12
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="menu-italia-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">De Italia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="nosotros-graphic-divider">
+                        <div class="nosotros-graphic-divider-left">
+                            <div></div>
+                        </div>
+                        <div class="nosotros-graphic-divider-center">
+                            <img src="assets/images/lacasa-nosotros-pretty-divider.png">
+                        </div>
+                        <div class="nosotros-graphic-divider-right">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="modal-body-content">
+                        <p>Lasagna</p>
+                        <p>Pollo Alfredo</p>
+                    </div>
+                </div>
+                <div class="modal-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="menu-ensalads-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ver Ensaladas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="nosotros-graphic-divider">
+                        <div class="nosotros-graphic-divider-left">
+                            <div></div>
+                        </div>
+                        <div class="nosotros-graphic-divider-center">
+                            <img src="assets/images/lacasa-nosotros-pretty-divider.png">
+                        </div>
+                        <div class="nosotros-graphic-divider-right">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="modal-body-content">
+                        <p>Ensalada Cesar</p>
+                        <p>De La Casa</p>
+                    </div>
+                </div>
+                <div class="modal-bottom"></div>
             </div>
         </div>
     </div>

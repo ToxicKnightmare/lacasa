@@ -283,12 +283,16 @@ nav {
     text-align: center;
     text-shadow: 1.5px 1.5px 1px #000000;
 }
-.cortes-view-more-inside button.btn-primary, .nosotros-view-story-inside button.btn-primary {
+.cortes-view-more-inside button.btn-primary, 
+.nosotros-view-story-inside button.btn-primary,
+.menu-view-more-inside  button.btn-primary {
     color:#F5EDD8;
     background: none;
     border: 0px;
 }
-.cortes-view-more-inside button.btn-primary:hover, .nosotros-view-story-inside button.btn-primary:hover {
+.cortes-view-more-inside button.btn-primary:hover, 
+.nosotros-view-story-inside button.btn-primary:hover,
+.menu-view-more-inside button.btn-primary:hover {
     color: #C9A060;
     background: none;
     border: 0px;
@@ -465,6 +469,12 @@ nav {
     line-height: 34px;
     text-align: center;
     text-shadow: 1.5px 1.5px 1px #000000;
+}
+#menu-section .modal {
+    font-family: "Playfair Display", serif;
+}
+.small-menu-text {
+    font-size: 16px;
 }
 
 /* EVENTOS CSS */
