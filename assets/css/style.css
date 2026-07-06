@@ -80,7 +80,7 @@ nav {
 .name-container {
     align-items: center;
 }
-.name {
+.name, .name a {
     font-family: Cinzel, sans-serif;
     color: #C9A060;
     font-weight: 700;
@@ -283,6 +283,16 @@ nav {
     text-align: center;
     text-shadow: 1.5px 1.5px 1px #000000;
 }
+.cortes-view-more-inside button.btn-primary, .nosotros-view-story-inside button.btn-primary {
+    color:#F5EDD8;
+    background: none;
+    border: 0px;
+}
+.cortes-view-more-inside button.btn-primary:hover, .nosotros-view-story-inside button.btn-primary:hover {
+    color: #C9A060;
+    background: none;
+    border: 0px;
+}
 
 /* NOSOTROS CSS */
 .nosotros-wrapper {
@@ -356,6 +366,10 @@ nav {
     width: 75%;
     margin: 12px auto;
     font-weight: 500;
+}
+.modal-backdrop.show {
+    background-color: rgba(0, 0, 0, 0.85);
+    /* darker */
 }
 
 
@@ -726,4 +740,40 @@ nav {
 }
 .footer-copyright {
     font-size: 13px;
+}
+
+
+/* Modals */
+.modal-content {
+    background-image: url(../images/lacasa-reserva-parchmant-bkgd.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #230D02;
+}
+.modal-header {
+    padding: 25px 35px 0px;
+    border-bottom: 0px;
+}
+.modal-header .btn-close {
+    --bs-btn-close-opacity: 1.5;
+}
+.modal-title {
+    font-size: 28px;
+}
+.modal-body {
+    padding: 0px 45px;
+    font-size: 20px;
+}
+.modal-body img {
+    height: 18px;
+}
+.modal-body-content {
+    margin: 20px 0px 60px;
+}
+.modal-bottom {
+    background-image: url(../images/lacasa-reserva-parchmant-bkgd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 27px;
 }
