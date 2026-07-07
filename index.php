@@ -23,12 +23,12 @@
             <?php
                 include 'containers/header.html';
                 include 'containers/hero.html';
-                include 'containers/cortes.html';
-                include 'containers/nosotros.html';
-                include 'containers/menu.html';
-                include 'containers/eventos.html';
-                include 'containers/reserva.html';
-                include 'containers/social.html';
+                //include 'containers/cortes.html';
+                //include 'containers/nosotros.html';
+                //include 'containers/menu.html';
+                //include 'containers/eventos.html';
+                //include 'containers/reserva.html';
+                //include 'containers/social.html';
                 include 'containers/footer.html';
             ?>
         </div>

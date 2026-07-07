@@ -118,49 +118,34 @@ nav {
 }
 
 
-
 /* HERO CSS */
 .hero-wrapper {
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    align-items: center;
-    background-image: url(../images/lacasa-argentina-hero-background-new.png);
+    min-height: 93vh;
+    background-image: url('../images/lacasa-argentina-hero-background-new.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-/*.hero-image {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}*/
-.hero-left {
-    position: relative;
-    z-index: 10;
-    max-width: 1280px;
-    margin: auto;
-    padding: 0 96px;
-    top: 25vh;
-}
 .hero-content-wrapper {
-    max-width: 448px;
+    max-width: 100%;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, transparent 85%);
+    padding: 20px;
 }
 .hero-content-header {
-    line-height: 60px;
+    line-height: 56px;
     padding-bottom: 20px;
-    font-size: 58px;
+    font-size: 50px;
     font-weight: 500;
     text-align: center;
 }
 .hero-subcontent-header {
     font-style: italic;
-    font-size: 52px;
+    font-size: 44px;
 }
 .hero-content-description {
-    font-size: 32px;
+    font-size: 28px;
     color: #C9A060;
     text-align: center;
     text-shadow: 0.5px 0.5px 0px #F5EDD8;
@@ -176,11 +161,11 @@ nav {
 .hero-button-reserve-inside {
     background: linear-gradient(to bottom, #b13d03 0%, #691606 100%);
     border-radius: 6px;
-    border: 1px dashed #000000 ;
+    border: 1px dashed #000000;
     box-shadow:
         inset 0 12px 3px -12px rgba(255, 255, 255, 0.85),
         8px 10px 18px rgba(0, 0, 0, 0.55);
-    padding:8px;
+    padding: 8px;
     text-align: center;
     font-size: 26px;
     font-weight: 500;
@@ -204,6 +189,25 @@ nav {
 .hero-button-view-menu:hover {
     background: #F5EDD8;
 }
+@media (min-width: 992px) {
+    .hero-wrapper {
+        padding-top: 12vh;
+    }
+    .hero-content-wrapper {
+        text-align: center;
+    }
+    .hero-content-header {
+        font-size: 58px;
+        line-height: 60px;
+    }
+    .hero-subcontent-header {
+        font-size: 52px;
+    }
+    .hero-content-description {
+        font-size: 32px;
+    }
+}
+
 
 /* CORTES CSS */
 .cortes-wrapper {
