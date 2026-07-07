@@ -41,7 +41,6 @@ display: inline-block;
     transform: scaleY(1.2) skewX(-10deg);
     display: inline-block;
 }
-
 .page-wrapper {
     font-family: "Playfair Display", serif;
     color: #F5EDD8;
@@ -52,6 +51,11 @@ display: inline-block;
     height: 2px;
     width: 100%;
     background-color: #230D02;
+}
+.btn-primary, .btn-primary:hover {
+    color: #F5EDD8 !important;
+    background-color: transparent;
+    border: none;
 }
 
 /* NAV CSS */
@@ -84,7 +88,6 @@ nav {
     border: 1px solid #C9A060;
     padding: 8px 20px;
 }
-
 .reserve-button:hover {
     border: 1px solid #F5EDD8;
     color: #F5EDD8;
@@ -260,7 +263,7 @@ nav {
     width: 82%;
     margin: auto;
 }
-.cortes-view-menu-outside {
+.cortes-view-menu-outside, .nosotros-view-story-outside  {
     max-width: 385px;
     margin: auto;
     height: 74px;
@@ -270,7 +273,8 @@ nav {
     padding: 7px;
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
 }
-.cortes-view-more-inside {
+.cortes-view-more-inside,
+.nosotros-view-story-inside {
     background: linear-gradient(to bottom, #442818 0%, #1A1007 100%);
     border: 2px dashed #C9A060;
     border-bottom: 1px dashed #C9A060;
@@ -298,82 +302,106 @@ nav {
 
 
 /* NOSOTROS CSS */
+/* Wrapper */
 .nosotros-wrapper {
-    display: flex;
-    justify-content: center;
-    position: relative;
     width: 100%;
     min-height: 100vh;
-    align-items: center;
-    background-image: url(../images/lacasa-argentina-nosotros-background.png);
+    background-image: url('../images/lacasa-argentina-nosotros-background-mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 32px;
 }
 .nosotros-left {
-    width: 50%;
+    height: 40px;
 }
+/* Right side */
 .nosotros-right {
-    width: 50%;
-    min-height: 70vh;
-    text-align: center;
+    margin-top: 55px;
 }
 .nosotros-right-title {
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 600;
-    color: #230D02;
-    line-height: 100px
+    color: #F5EDD8;
+    line-height: 55px;
+    margin-top: 220px;
+    margin-bottom: 32px;
 }
-.nosotros-right .dark-brown-divider {
+
+.dark-brown-divider {
     width: 80%;
     margin: auto;
+    height: 2px;
+    background-color: #230D02;
 }
 .nosotros-right-subtitle {
-    color:#b63903;
-    font-size: 36px;
+    color: #230D02;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 46px;
+    line-height: 38px;
     margin-top: 8px;
 }
+/* Divider */
 .nosotros-graphic-divider {
     display: flex;
     justify-content: center;
     height: 28px;
     margin-top: 12px;
 }
-.nosotros-graphic-divider-left {
+.nosotros-graphic-divider-left,
+.nosotros-graphic-divider-right {
     width: 33%;
     align-self: center;
 }
 .nosotros-graphic-divider-left div {
     height: 2px;
-    width: 100%;
     background: linear-gradient(to left, #230D02 40%, transparent 100%);
-}
-.nosotros-graphic-divider-center {
-    margin: 0 4px;
-}
-.nosotros-graphic-divider-right {
-    width: 33%;
-    align-self: center;
 }
 .nosotros-graphic-divider-right div {
     height: 2px;
-    width: 100%;
     background: linear-gradient(to right, #230D02 40%, transparent 100%);
 }
+.nosotros-graphic-divider-center img {
+    height: 28px;
+}
+/* Message */
 .nosotros-right-message {
     color: #230D02;
-    font-size: 28px;
-    width: 75%;
+    font-size: 18px;
+    width: 100%;
     margin: 12px auto;
     font-weight: 500;
 }
+.nosotros-view-story-inside .btn-primary:hover {
+    color: #C9A060;
+}
+/* Modal backdrop */
 .modal-backdrop.show {
     background-color: rgba(0, 0, 0, 0.85);
-    /* darker */
 }
+@media (min-width: 992px) {
+    .nosotros-wrapper {
+        background-image: url('../images/lacasa-argentina-nosotros-background.png');
+    }
+    .nosotros-right-title {
+        font-size: 50px;
+        line-height: 100px;
+        padding-top: 0px;
+        margin-bottom: 10px;
+        color: #230D02;
+    }
+    .nosotros-right-subtitle {
+        color: #b63903;
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .nosotros-right-message {
+        font-size: 28px;
+        line-height: 32px;
+        width: 75%;
+    }
+}
+
 
 
 
@@ -771,7 +799,7 @@ nav {
 }
 .modal-body {
     padding: 0px 45px;
-    font-size: 20px;
+    font-size: 16px;
 }
 .modal-body img {
     height: 18px;
@@ -785,4 +813,9 @@ nav {
     background-repeat: no-repeat;
     background-position: bottom;
     height: 27px;
+}
+@media (min-width: 992px) {
+    .modal-body {
+        font-size: 20px;
+    }
 }
