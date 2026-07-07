@@ -1,108 +1,144 @@
-<section id="menu-section">
-    <div class="menu-wrapper">
-        <div class="menu-header flex">
-            <div><img src="assets/images/lacasa-moonacsent.png"></div>
-            <div class="menu-header-text">
-                Descubre Nuestro Menú
+<section id="menu-section" class="menu-wrapper d-flex align-items-start py-5">
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="row justify-content-center text-center mb-3">
+            <div class="col-12 d-flex justify-content-center align-items-center gap-3 menu-header">
+                <img src="assets/images/lacasa-moonacsent.png" alt="">
+                <div class="menu-header-text">Descubre Nuestro Menú</div>
+                <img src="assets/images/lacasa-moonacsent.png" class="flip" alt="">
             </div>
-            <div><img src="assets/images/lacasa-moonacsent.png" class="flip"></div>
         </div>
-        <div class="menu-subheader">
-            <div class="menu-subheader-text">Sabores que juntan dos tradiciones</div>
+
+        <!-- Subheader -->
+        <div class="row mb-3">
+            <div class="col-12 menu-subheader">
+                <div class="menu-subheader-text">Sabores que juntan dos tradiciones</div>
+            </div>
         </div>
-        <div class="container menu-grid-wrapper">
-            <div class="row g-3">
-                <!-- Repeat for 9 items -->
-                <div class="col-lg-4 col-md-4 col-12 menu-grid-item">
-                    <div class="menu-item-title">Aves</div>
-                    <div class="menu-item-subtitle">Sabores de Fuego y Mar</div>
-                    <div class="menu-item-image"><img src="assets/images/lacasa-milanesadepollo.png"></div>
-                    <div class="menu-item-button">
-                        <div class="menu-view-more-outside">
-                            <div class="menu-view-more-inside uppercase">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menu-aves-modal">
-                                    Ver Aves
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+
+        <!-- Grid -->
+        <div class="row g-4 menu-grid-wrapper">
+
+            <!-- Aves -->
+            <div class="col-lg-4 col-md-4 col-6 menu-grid-item text-center">
+                <div class="menu-item-title">Aves</div>
+                <div class="menu-item-subtitle">Sabores de Fuego y Mar</div>
+                <div class="menu-item-image">
+                    <img src="assets/images/lacasa-milanesadepollo.png" class="img-fluid">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12 menu-grid-item">
-                    <div class="menu-item-title">Pescado</div>
-                    <div class="menu-item-subtitle">Comida del mar, hecha al fuego</div>
-                    <div class="menu-item-image"><img src="assets/images/lacasa-bariloche-veracruz.png"></div>
-                    <div class="menu-item-button">
-                        <div class="menu-view-more-outside">
-                            <div class="menu-view-more-inside uppercase">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menu-pescado-modal">
-                                    Ver Pescado
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 menu-grid-item">
-                    <div class="menu-item-title">Camarones</div>
-                    <div class="menu-item-subtitle">Inspirado en la Tradición</div>
-                    <div class="menu-item-image"><img src="assets/images/lacasa-camaroneslacoco.png"></div>
-                    <div class="menu-item-button">
-                        <div class="menu-view-more-outside">
-                            <div class="menu-view-more-inside uppercase">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menu-camarones-modal">
-                                    Ver Camarones
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 menu-grid-item">
-                    <div class="menu-item-title">Pizzas y Empanadas</div>
-                    <div class="menu-item-subtitle">Hechas al horno con leña</div>
-                    <div class="menu-item-image"><img src="assets/images/lacasa-pizza-empanadas.png"></div>
-                    <div class="menu-item-button">
-                        <div class="menu-view-more-outside">
-                            <div class="menu-view-more-inside uppercase">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#menu-pizza-modal">
-                                    Ver Pizzas y Empanadas
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 menu-grid-item">
-                    <div class="menu-item-title">De Italia</div>
-                    <div class="menu-item-subtitle">Comodidad del Viejo Mundo</div>
-                    <div class="menu-item-image"><img src="assets/images/lacasa-lasagna.png"></div>
-                    <div class="menu-item-button">
-                        <div class="menu-view-more-outside">
-                            <div class="menu-view-more-inside uppercase">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#menu-italia-modal">
-                                    Ver de Italia
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-12 menu-grid-item">
-                    <div class="menu-item-title">Ensaladas</div>
-                    <div class="menu-item-subtitle">Crujiente y Artesanal</div>
-                    <div class="menu-item-image"><img src="assets/images/lacasa-caesarsalad.png"></div>
-                    <div class="menu-item-button">
-                        <div class="menu-view-more-outside">
-                            <div class="menu-view-more-inside uppercase">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#menu-ensalads-modal">
-                                    Ver Ensaladas
-                                </button>
-                            </div>
+                <div class="menu-item-button">
+                    <div class="menu-view-more-outside">
+                        <div class="menu-view-more-inside uppercase">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#menu-aves-modal">
+                                Ver Aves
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Pescado -->
+            <div class="col-lg-4 col-md-4 col-6 menu-grid-item text-center">
+                <div class="menu-item-title">Pescado</div>
+                <div class="menu-item-subtitle">Comida del mar, hecha al fuego</div>
+                <div class="menu-item-image">
+                    <img src="assets/images/lacasa-bariloche-veracruz.png" class="img-fluid">
+                </div>
+                <div class="menu-item-button">
+                    <div class="menu-view-more-outside">
+                        <div class="menu-view-more-inside uppercase">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#menu-pescado-modal">
+                                Ver Pescado
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Camarones -->
+            <div class="col-lg-4 col-md-4 col-6 menu-grid-item text-center">
+                <div class="menu-item-title">Camarones</div>
+                <div class="menu-item-subtitle">Inspirado en la Tradición</div>
+                <div class="menu-item-image">
+                    <img src="assets/images/lacasa-camaroneslacoco.png" class="img-fluid">
+                </div>
+                <div class="menu-item-button">
+                    <div class="menu-view-more-outside">
+                        <div class="menu-view-more-inside uppercase">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#menu-camarones-modal">
+                                Ver Camarones
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizzas y Empanadas -->
+            <div class="col-lg-4 col-md-4 col-6 menu-grid-item text-center">
+                <div class="menu-item-title">Pizzas <span class="hide-mobile">y Empanadas</span></div>
+                <div class="menu-item-subtitle">Hechas al horno con leña</div>
+                <div class="menu-item-image">
+                    <img src="assets/images/lacasa-pizza-empanadas.png" class="img-fluid">
+                </div>
+                <div class="menu-item-button">
+                    <div class="menu-view-more-outside">
+                        <div class="menu-view-more-inside uppercase">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#menu-pizza-modal">
+                                Ver Pizzas <span class="hide-mobile">y Empanadas</span></button>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- De Italia -->
+            <div class="col-lg-4 col-md-4 col-6 menu-grid-item text-center">
+                <div class="menu-item-title">De Italia</div>
+                <div class="menu-item-subtitle">Comodidad del Viejo Mundo</div>
+                <div class="menu-item-image">
+                    <img src="assets/images/lacasa-lasagna.png" class="img-fluid">
+                </div>
+                <div class="menu-item-button">
+                    <div class="menu-view-more-outside">
+                        <div class="menu-view-more-inside uppercase">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#menu-italia-modal">
+                                Ver de Italia
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ensaladas -->
+            <div class="col-lg-4 col-md-4 col-6 menu-grid-item text-center">
+                <div class="menu-item-title">Ensaladas</div>
+                <div class="menu-item-subtitle">Crujiente y Artesanal</div>
+                <div class="menu-item-image">
+                    <img src="assets/images/lacasa-caesarsalad.png" class="img-fluid">
+                </div>
+                <div class="menu-item-button">
+                    <div class="menu-view-more-outside">
+                        <div class="menu-view-more-inside uppercase">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#menu-ensalads-modal">
+                                Ver Ensaladas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
     </div>
+
     <div class="modal fade" id="menu-aves-modal" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-content">

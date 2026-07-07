@@ -57,6 +57,14 @@ display: inline-block;
     background-color: transparent;
     border: none;
 }
+.hide-mobile {
+    display: none;
+}
+@media (min-width: 992px) {
+    .hide-mobile {
+        display: inline-block;
+    }
+}
 
 /* NAV CSS */
 nav {
@@ -407,82 +415,52 @@ nav {
 
 /* MENU CSS */
 .menu-wrapper {
-    justify-content: center;
-    position: relative;
     width: 100%;
     min-height: 100vh;
-    align-items: center;
-    background-image: url(../images/lacasa-argentina-menu-background.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-image: url('../images/lacasa-argentina-menu-background.png');
+    background-size: cover;
     background-position: top;
     background-position-y: -75px;
-    padding-top: 68px;
-    z-index: 10;
+    background-repeat: repeat-y;
 }
 .menu-header {
-    justify-content: center;
-    max-width: 1280px;
-    margin: auto;
     gap: 24px;
     line-height: 74px;
 }
-.menu-header img {
-    margin-top: 6px;
-}
 .menu-header-text {
-    font-size: 56px;
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 10px;
     color: #442818;
     border-bottom: 2px solid #442818;
 }
-.menu-subheader {
-    text-align: center;
-}
 .menu-subheader-text {
-    font-size: 26px;
+    font-size: 22px;
     color: #442818;
-    margin: auto;
-    line-height: 40px;
-}
-.menu-grid-wrapper {
-    margin-top: 10px;
-}
-.menu-grid-item {
+    line-height: 28px;
     text-align: center;
 }
 .menu-item-title {
     font-size: 32px;
+    line-height: 34px;
     font-weight: 500;
     color: #442818;
     width: 90%;
     margin: auto;
     border-bottom: 2px solid #442818;
-
 }
 .menu-item-subtitle {
-    font-size: 24px;
+    font-size: 13px;
     color: #b63903;
-    text-shadow: 1px 1px 0.5px #000000;
-}
-.menu-item-image {
-    max-height: 180px;
-    position: relative;
-    top: -20px;
+    text-shadow: 1px 1px 0.5px #000;
 }
 .menu-item-image img {
     max-height: 250px;
 }
-.menu-item-button {
-    position: relative;
-    top: -10px;
-    z-index: 15;
-}
 .menu-view-more-outside {
     max-width: 255px;
-    width: 100%;
     margin: auto;
     height: 48px;
-    max-height: 48px;
     border: 1px solid #C9A060;
     border-bottom: 2px solid #C9A060;
     background-color: #30150a;
@@ -495,14 +473,27 @@ nav {
     border-bottom: 1px dashed #C9A060;
     line-height: 34px;
     text-align: center;
-    text-shadow: 1.5px 1.5px 1px #000000;
+    text-shadow: 1.5px 1.5px 1px #000;
 }
-#menu-section .modal {
-    font-family: "Playfair Display", serif;
+@media (min-width: 992px) {
+    .menu-wrapper {
+        padding-top: 68px;
+        background-repeat: no-repeat;
+    }
+    .menu-header-text {
+        font-size: 56px;
+        line-height: 60px;
+        padding-bottom: 24px;
+    }
+    .menu-subheader-text {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .menu-item-subtitle {
+        font-size: 24px;
+    }
 }
-.small-menu-text {
-    font-size: 16px;
-}
+
 
 /* EVENTOS CSS */
 .eventos-wrapper {
