@@ -56,65 +56,67 @@ display: inline-block;
 
 /* NAV CSS */
 nav {
-    position: fixed;
-    top: 0;
-    inset-inline: 0;
-    z-index: 50;
+    width: 100%;
     background: linear-gradient(to bottom, #000 0%, #000 70%, rgba(0, 0, 0, 0) 100%);
 }
 .nav-wrapper {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 16px;
-    align-items: center;
-    max-width: 1280px;
-    margin: auto;
-}
-.nav-first.showDesktop {
     display: flex;
-    column-gap: 32px;
-    align-items: center;
-    font-size: 12px;
+    width: 100%;
 }
-.name-container {
-    align-items: center;
+.nav-link {
+    font-size: 14px;
 }
-.name, .name a {
+.nav-link:hover {
+    color: #C9A060;
+}
+.brand-title {
     font-family: Cinzel, sans-serif;
     color: #C9A060;
     font-weight: 700;
     font-size: 24px;
 }
-.name-subtext {
+.brand-subtitle {
     color: #F5EDD8;
-    font-size: 9px;
-    margin-top: 4px;
-}
-.nav-last.showDesktop {
-    display: flex;
-    column-gap: 32px;
-    align-items: center;
-    font-size: 12px;
+    font-size: 11px;
 }
 .reserve-button {
     background-color: #8B1C1C;
     border: 1px solid #C9A060;
     padding: 8px 20px;
 }
-.reserve-button:hover { 
+
+.reserve-button:hover {
     border: 1px solid #F5EDD8;
     color: #F5EDD8;
 }
 
-@media (max-width: 640px) {
-    .showDesktop {
-        display: none
+@media (min-width: 992px) {
+    nav {
+        position: fixed !important;
+        z-index: 50;
     }
-    .showMobile {
-        display: flex;
+    .nav-wrapper {
+        max-width: 1280px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+    .nav-right, .nav-link{
+        margin: auto 0;
     }
 }
+@media (max-width: 991px) {
+    .nav-link {
+        font-size: 19px;
+    }
+    .brand-block.text-center {
+        text-align: left !important;
+        margin-left: 8px !important;
+    }
+}
+
 
 
 /* HERO CSS */
