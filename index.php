@@ -23,7 +23,7 @@
             <?php
                 include 'containers/header.html';
                 include 'containers/hero.html';
-                //include 'containers/cortes.html';
+                include 'containers/cortes.html';
                 //include 'containers/nosotros.html';
                 //include 'containers/menu.html';
                 //include 'containers/eventos.html';
