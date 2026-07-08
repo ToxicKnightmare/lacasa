@@ -1,0 +1,147 @@
+:root {
+    /* Brand Colors */
+    --lacasa-gold: #C9A060;
+    --lacasa-brass: #b63903;
+    --lacasa-dark: #230D02;
+    --lacasa-brown: #442818;
+    --lacasa-parchment: #F5EDD8;
+
+    /* Typography */
+    --lacasa-font-primary: 'Playfair Display', serif;
+    --lacasa-font-secondary: 'Raleway', sans-serif;
+
+    /* Shadows */
+    --lacasa-shadow-heavy: 20px 16px 28px rgba(0, 0, 0, 0.6);
+    --lacasa-shadow-soft: 8px 8px 16px rgba(0, 0, 0, 0.6);
+
+    /* Spacing Scale */
+    --space-xs: 6px;
+    --space-sm: 12px;
+    --space-md: 24px;
+    --space-lg: 48px;
+    --space-xl: 72px;
+}
+
+
+/* TYPOGRAPHY */
+body {
+    font-family: var(--lacasa-font-secondary);
+    color: var(--lacasa-dark);
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    color: var(--lacasa-parchment);
+}
+h1,
+h2,
+h3,
+.tall-slanted-text {
+    font-family: var(--lacasa-font-primary);
+    font-weight: 600;
+    color: var(--lacasa-parchment);
+    line-height: 1.2;
+}
+.tall-slanted-text {
+    font-size: 50px;
+    transform: skewX(-10deg);
+    display: inline-block;
+}
+.tall-text {
+    transform: scaleY(1.3);
+    display: inline-block;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*  DIVIDERS */
+.lacasa-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    margin: var(--space-xs) auto;
+}
+.lacasa-divider-left,
+.lacasa-divider-right {
+    width: 33%;
+}
+.lacasa-divider-left div {
+    height: 2px;
+    background: linear-gradient(to left, var(--lacasa-dark) 40%, transparent 100%);
+}
+.lacasa-divider-right div {
+    height: 2px;
+    background: linear-gradient(to right, var(--lacasa-dark) 40%, transparent 100%);
+}
+.lacasa-divider-center img {
+    height: 28px;
+}
+
+/* UNIFIED BUTTONS */
+.lacasa-btn-outside {
+    background-color: #30150a;
+    border: 1px solid var(--lacasa-gold);
+    border-bottom: 2px solid var(--lacasa-gold);
+    padding: var(--space-xs);
+    box-shadow: var(--lacasa-shadow-soft);
+    max-width: 385px;
+    margin: auto;
+}
+.lacasa-btn-inside {
+    background: linear-gradient(to bottom, var(--lacasa-brown) 0%, #1A1007 100%);
+    border: 2px dashed var(--lacasa-gold);
+    border-bottom: 1px dashed var(--lacasa-gold);
+    text-align: center;
+    line-height: 54px;
+    text-shadow: 1.5px 1.5px 1px #000;
+    font-weight: 600;
+    font-size: 22px;
+}
+.lacasa-btn-inside:hover {
+    box-shadow:
+        inset 0 -12px 3px -12px rgba(255, 255, 255, 0.85),
+        -8px -10px 18px rgba(0, 0, 0, 0.55);
+    color: var(--lacasa-brass);
+}
+
+/* SECTION SPACING */
+.lacasa-section {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lacasa-section-dark {
+    background-color: #1A1007;
+}
+footer {
+    background-color: #1A1007;
+    color: var(--lacasa-parchment);
+}
+
+footer a {
+    color: rgba(231, 233, 234, 1);
+}
+
+footer a:hover {
+    color: var(--lacasa-gold);
+}
+
+@media (max-width: 991px) {
+    .lacasa-mobile-center {
+        text-align: center !important;
+    }
+
+    .lacasa-mobile-stack {
+        display: block !important;
+    }
+
+    .lacasa-mobile-pad {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }
+}

@@ -1,71 +1,13 @@
-body {
-    padding: 0px;
-    margin: 0px;
-}
-.flex {
-    display: flex;
-}
-.flex-col {
-    flex-direction: column;
-}
-.justify-between {
-    justify-content: space-between;
-}
-a {
-    text-decoration: none;
-    color: #F5EDD8;
-    cursor: pointer;
-}
-a:hover {
-    color: #C9A060;
-}
-.uppercase {
-    text-transform: uppercase;
-}
-.showMobile {
-    display: none;
-}
-.flip {
-    transform: rotate(180deg);
-}
-.tall-text {
-    transform: scaleY(1.3);
-    display: inline-block;
-}
-.slanted-text {
-transform: skewX(-10deg);
-/* negative = slant left, positive = slant right */
-display: inline-block;
-}
-.tall-slanted-text {
-    transform: scaleY(1.2) skewX(-10deg);
-    display: inline-block;
-}
 .page-wrapper {
     font-family: "Playfair Display", serif;
     color: #F5EDD8;
     background-color: #0F0705;
     min-height: 110vh;
 }
-.dark-brown-divider {
-    height: 2px;
-    width: 100%;
-    background-color: #230D02;
-}
 .btn-primary, .btn-primary:hover {
-    color: #F5EDD8 !important;
     background-color: transparent;
     border: none;
 }
-.hide-mobile {
-    display: none;
-}
-@media (min-width: 992px) {
-    .hide-mobile {
-        display: inline-block;
-    }
-}
-
 /* NAV CSS */
 nav {
     width: 100%;
@@ -130,15 +72,6 @@ nav {
 
 
 /* HERO CSS */
-.hero-wrapper {
-    position: relative;
-    width: 100%;
-    min-height: 93vh;
-    background-image: url('../images/lacasa-argentina-hero-background-new.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 .hero-content-wrapper {
     max-width: 100%;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, transparent 85%);
@@ -162,26 +95,6 @@ nav {
     text-shadow: 0.5px 0.5px 0px #F5EDD8;
     margin-bottom: 3rem;
 }
-.hero-button-reserve-outside {
-    background: linear-gradient(to bottom, #b63903 0%, #540c04 100%);
-    border-radius: 6px;
-    padding: 6px;
-    width: 90%;
-    margin: auto;
-}
-.hero-button-reserve-inside {
-    background: linear-gradient(to bottom, #b13d03 0%, #691606 100%);
-    border-radius: 6px;
-    border: 1px dashed #000000;
-    box-shadow:
-        inset 0 12px 3px -12px rgba(255, 255, 255, 0.85),
-        8px 10px 18px rgba(0, 0, 0, 0.55);
-    padding: 8px;
-    text-align: center;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 42px;
-}
 .hero-button-reserve-inside:hover {
     box-shadow:
         inset 0 -12px 3px -12px rgba(255, 255, 255, 0.85),
@@ -198,7 +111,7 @@ nav {
     margin: auto;
 }
 .hero-button-view-menu:hover {
-    background: #F5EDD8;
+    background: var(--lacasa-brass);
 }
 @media (min-width: 992px) {
     .hero-wrapper {
@@ -221,16 +134,6 @@ nav {
 
 
 /* CORTES CSS */
-.cortes-wrapper {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('../images/lacasa-argentina-cortes-background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding-top: 32px;
-}
 .cortes-header {
     gap: 24px;
     line-height: 74px;
@@ -271,25 +174,6 @@ nav {
     width: 82%;
     margin: auto;
 }
-.cortes-view-menu-outside, .nosotros-view-story-outside  {
-    max-width: 385px;
-    margin: auto;
-    height: 74px;
-    border: 1px solid #C9A060;
-    border-bottom: 2px solid #C9A060;
-    background-color: #30150a;
-    padding: 7px;
-    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
-}
-.cortes-view-more-inside,
-.nosotros-view-story-inside {
-    background: linear-gradient(to bottom, #442818 0%, #1A1007 100%);
-    border: 2px dashed #C9A060;
-    border-bottom: 1px dashed #C9A060;
-    line-height: 54px;
-    text-align: center;
-    text-shadow: 1.5px 1.5px 1px #000;
-}
 @media (min-width: 992px) {
     .cortes-wrapper {
         padding-top: 80px !important;
@@ -310,16 +194,6 @@ nav {
 
 
 /* NOSOTROS CSS */
-/* Wrapper */
-.nosotros-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('../images/lacasa-argentina-nosotros-background-mobile.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding-top: 32px;
-}
 .nosotros-left {
     height: 40px;
 }
@@ -335,7 +209,6 @@ nav {
     margin-top: 220px;
     margin-bottom: 32px;
 }
-
 .dark-brown-divider {
     width: 80%;
     margin: auto;
@@ -348,29 +221,6 @@ nav {
     font-weight: 500;
     line-height: 38px;
     margin-top: 8px;
-}
-/* Divider */
-.nosotros-graphic-divider {
-    display: flex;
-    justify-content: center;
-    height: 28px;
-    margin-top: 12px;
-}
-.nosotros-graphic-divider-left,
-.nosotros-graphic-divider-right {
-    width: 33%;
-    align-self: center;
-}
-.nosotros-graphic-divider-left div {
-    height: 2px;
-    background: linear-gradient(to left, #230D02 40%, transparent 100%);
-}
-.nosotros-graphic-divider-right div {
-    height: 2px;
-    background: linear-gradient(to right, #230D02 40%, transparent 100%);
-}
-.nosotros-graphic-divider-center img {
-    height: 28px;
 }
 /* Message */
 .nosotros-right-message {
@@ -389,7 +239,7 @@ nav {
 }
 @media (min-width: 992px) {
     .nosotros-wrapper {
-        background-image: url('../images/lacasa-argentina-nosotros-background.png');
+        background-image: url('../images/lacasa-argentina-nosotros-background.png') !important;
     }
     .nosotros-right-title {
         font-size: 50px;
@@ -414,15 +264,6 @@ nav {
 
 
 /* MENU CSS */
-.menu-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('../images/lacasa-argentina-menu-background.png');
-    background-size: cover;
-    background-position: top;
-    background-position-y: -75px;
-    background-repeat: repeat-y;
-}
 .menu-header {
     gap: 24px;
     line-height: 74px;
@@ -497,16 +338,8 @@ nav {
 
 /* EVENTOS CSS */
 .eventos-wrapper {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('../images/lacasa-argentina-nosotros-background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding-top: 32px;
-
     /* Flip background */
-    transform: scaleX(-1);
+    
 }
 .eventos-container {
     width: 100%;
@@ -514,20 +347,19 @@ nav {
     transform: scaleX(-1);
 }
 .eventos-left-title {
-    font-size: 46px;
+    font-size: 44px;
     font-weight: 600;
-    color: #F5EDD8;
+    color: #230D02;
     line-height: 55px;
     margin-top: 64px;
     margin-bottom: 32px;
-    text-shadow: 1px 1px 0.5px #000;
 }
 .eventos-left .dark-brown-divider {
     width: 80%;
     margin: auto;
 }
 .eventos-left-subtitle {
-    color: #F5EDD8;
+    color: #b63903;
     font-size: 36px;
     font-weight: 500;
     line-height: 46px;
@@ -541,42 +373,19 @@ nav {
     margin: 12px auto;
     font-weight: 500;
 }
-.eventos-graphic-divider {
-    display: flex;
-    justify-content: center;
-    height: 28px;
-    margin-top: 12px;
-}
-.eventos-graphic-divider-left,
-.eventos-graphic-divider-right {
-    width: 33%;
-    align-self: center;
-}
-.eventos-graphic-divider-left div {
-    height: 2px;
-    background: linear-gradient(to left, #230D02 40%, transparent 100%);
-}
-.eventos-graphic-divider-right div {
-    height: 2px;
-    background: linear-gradient(to right, #230D02 40%, transparent 100%);
-}
-.eventos-graphic-divider-center img {
-    height: 28px;
-}
 .eventos-right {
-    min-height: 70vh;
+    min-height: 0vh;
 }
 @media (min-width: 992px) {
     .eventos-left-title {
         font-size: 50px;
         line-height: 100px;
-        color: #230D02;
-    }
-    .eventos-left-subtitle {
-        color: #b63903;
     }
     .eventos-left-message {
         color: #230D02;
+    }
+    .eventos-right {
+        min-height: 70vh;
     }
 }
 
@@ -632,42 +441,14 @@ nav {
     margin: auto;
 }
 .reserva-body-section {
-    margin-top: 40px;
+    margin-top: 24px;
     padding: 0px 54px;
 }
 .reserva-title {
     font-size: 36px;
 }
-.reserva-divider {
-    height: 12px;
-    display: flex;
-    justify-content: center;
-}
-.reserva-divider-left,
-.reserva-divider-right {
-    width: 33%;
-    align-self: center;
-}
-.reserva-divider-left div {
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(to left, #230D02 40%, transparent 100%);
-}
-.reserva-divider-center {
-    margin: 0 4px;
-}
-.reserva-divider-center img {
-    position: relative;
-    top: -8px;
-}
-.reserva-divider-right div {
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(to right, #230D02 40%, transparent 100%);
-}
 .reserva-subtitle {
     font-size: 21px;
-    margin: 12px 0px;
 }
 .reserva-phone-text,
 .reserva-phone-number,
@@ -753,44 +534,81 @@ nav {
     padding: 40px 0px;
 }
 .footer-container {
-    display: flex;
-    justify-content:center;
-    gap: 20px;
     margin-bottom: 26px;
-}
-.footer-social {
-    width: 33%;
-    text-align: right;
-    color: #C9A060;
-    font-size: 18px;
-}
-.footer-social-icon-wrapper {
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-    margin-top: 12px
-}
-.instagram a, .instagram a:hover,
-.facebook a, .facebook a:hover,
-.x a, .x a:hover {
-    color: rgba(231, 233, 234, 1.00)
+    color: #F5EDD8;
 }
 .footer-links {
-    width: 33%;
+    display: none;
 }
-.footer-links-title {
-    font-size: 18px;
+.footer-links,
+.footer-social {
     color: #C9A060;
+    width: 100%;
 }
 .footer-info {
-    width: 33%;
-    text-align: left;
+    text-align: center;
+    width: 100%;
 }
 .footer-info .title {
     color: #C9A060;
 }
+.footer-links-title {
+    font-size: 18px;
+    color: #C9A060;
+    margin-bottom: 8px;
+}
+.footer-links a {
+    color: #F5EDD8;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    color: #C9A060;
+}
+.footer-social {
+    text-align: center;
+    font-size: 18px;
+}
+.footer-social-icon-wrapper {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    margin-top: 12px;
+    flex-direction: row;
+}
+.instagram a,
+.facebook a,
+.x a {
+    color: #F5EDD8;
+}
+.instagram a:hover,
+.facebook a:hover,
+.x a:hover {
+    color: #C9A060;
+}
 .footer-copyright {
     font-size: 13px;
+    color: #F5EDD8;
+}
+@media (min-width: 992px) {
+    .footer-container {
+        justify-content: space-between;
+    }
+    .footer-info {
+        text-align: left;
+        width: auto;
+    }
+    .footer-links {
+        display: inline-block;
+        width: auto;
+    }
+    .footer-social {
+        text-align: right;
+        width: auto;
+    }
+    .footer-social-icon-wrapper {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
 }
 
 
