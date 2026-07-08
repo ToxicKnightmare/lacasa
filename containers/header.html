@@ -1,24 +1,37 @@
-<nav>
-   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between nav-wrapper">
-      <div class="nav-first showDesktop" >
-         <a href="#cortes-section" class="uppercase">Cortes</a>
-         <a href="#" class="uppercase">Nosotros</a>
-         <a href="#" class="uppercase">Menú</a>
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+   <div class="container-fluid max-w-7xl mx-auto px-6">
+      <div class="nav-wrapper">
+         <!-- Left Nav (Desktop Only) -->
+         <div class="d-none d-lg-flex gap-4 nav-left">
+            <a class="nav-link text-uppercase" href="#cortes-section">Cortes</a>
+            <a class="nav-link text-uppercase" href="#nosotros-section">Nosotros</a>
+            <a class="nav-link text-uppercase" href="#menu-section">Menú</a>
+         </div>
+         <!-- Brand Center -->
+         <a class="navbar-brand mx-auto text-center brand-block" href="#">
+            <div class="brand-title text-uppercase">La Casa Argentina</div>
+            <div class="brand-subtitle text-uppercase">Steakhouse Argentino · México</div>
+         </a>
+         <!-- Right Nav (Desktop Only) -->
+         <div class="d-none d-lg-flex gap-4 nav-right">
+            <a class="nav-link text-uppercase" href="#eventos-section">Eventos</a>
+            <a class="nav-link text-uppercase reserve-button" href="#reserva-section">Reservar</a>
+         </div>
+         <!-- Hamburger -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+               <span class="navbar-toggler-icon"></span>
+            </button>
       </div>
-      <div class="name-container flex flex-col">
-         <span class="name uppercase">La Casa Argentina</span>
-         <span class="name-subtext uppercase">Steakhouse Argentino · México</span>
+      <!-- Mobile Menu -->
+      <div class="collapse navbar-collapse mt-3" id="mainNav">
+         <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#cortes-section">Cortes</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#nosotros-section">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#menu-section">Menú</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase" href="#eventos-section">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase reserve-button" href="#reserva-section">Reservar</a>
+            </li>
+         </ul>
       </div>
-      <div class="nav-last showDesktop">
-         <a href="#" class="uppercase">Eventos</a>
-         <a href="#reservar" class="reserve-button uppercase">Reservar</a>
-      </div>
-      <button class="showMobile">
-         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
-            <line x1="4" x2="20" y1="12" y2="12"></line>
-            <line x1="4" x2="20" y1="6" y2="6"></line>
-            <line x1="4" x2="20" y1="18" y2="18"></line>
-         </svg>
-       </button>
    </div>
 </nav>

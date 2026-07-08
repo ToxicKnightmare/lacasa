@@ -13,9 +13,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="assets/css/bootstrap-icons.css"/>
-        <link rel="stylesheet" href="assets/css/style.css"/>
-
+        <link rel="stylesheet" href="assets/css/lacasa-theme.css"/>
+        <link rel="stylesheet" href="assets/css/index-style.css"/>
         <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script> 
+        <script src="assets/js/main.js" type="text/javascript"></script>
 
     </head>
     <body>
@@ -24,7 +25,14 @@
                 include 'containers/header.html';
                 include 'containers/hero.html';
                 include 'containers/cortes.html';
+                include 'containers/nosotros.html';
+                include 'containers/menu.html';
+                include 'containers/eventos.html';
+                include 'containers/reserva.html';
+                //include 'containers/social.html';
+                include 'containers/footer.html';
             ?>
         </div>
+        <script src="assets/js/footer.js" type="text/javascript"></script>
     </body>
 </html>

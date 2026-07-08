@@ -1,0 +1,653 @@
+.page-wrapper {
+    font-family: "Playfair Display", serif;
+    color: #F5EDD8;
+    background-color: #0F0705;
+    min-height: 110vh;
+}
+.btn-primary, .btn-primary:hover {
+    background-color: transparent;
+    border: none;
+}
+/* NAV CSS */
+nav {
+    width: 100%;
+    background: linear-gradient(to bottom, #000 0%, #000 70%, rgba(0, 0, 0, 0) 100%);
+}
+.nav-wrapper {
+    display: flex;
+    width: 100%;
+}
+.nav-link {
+    font-size: 14px;
+}
+.nav-link:hover {
+    color: #C9A060;
+}
+.brand-title {
+    font-family: Cinzel, sans-serif;
+    color: #C9A060;
+    font-weight: 700;
+    font-size: 24px;
+}
+.brand-subtitle {
+    color: #F5EDD8;
+    font-size: 11px;
+}
+.reserve-button {
+    background-color: #8B1C1C;
+    border: 1px solid #C9A060;
+    padding: 8px 20px;
+}
+.reserve-button:hover {
+    border: 1px solid #F5EDD8;
+    color: #F5EDD8;
+}
+
+@media (min-width: 992px) {
+    nav {
+        position: fixed !important;
+        z-index: 50;
+    }
+    .nav-wrapper {
+        max-width: 1280px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    .navbar-expand-lg .navbar-collapse {
+        display: none !important;
+    }
+    .nav-right, .nav-link{
+        margin: auto 0;
+    }
+}
+@media (max-width: 991px) {
+    .nav-link {
+        font-size: 19px;
+    }
+    .brand-block.text-center {
+        text-align: left !important;
+        margin-left: 8px !important;
+    }
+}
+
+
+/* HERO CSS */
+.hero-content-wrapper {
+    max-width: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, transparent 85%);
+    padding: 20px;
+}
+.hero-content-header {
+    line-height: 56px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+.hero-subcontent-header {
+    font-style: italic;
+    font-size: 44px;
+}
+.hero-content-description {
+    font-size: 28px;
+    color: #C9A060;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 0px #F5EDD8;
+    margin-bottom: 3rem;
+}
+.hero-button-reserve-inside:hover {
+    box-shadow:
+        inset 0 -12px 3px -12px rgba(255, 255, 255, 0.85),
+        -8px -10px 18px rgba(0, 0, 0, 0.55);
+}
+.hero-button-view-menu {
+    border: 1px solid #F5EDD8;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    max-width: 322px;
+    width: 75%;
+    margin: auto;
+}
+.hero-button-view-menu:hover {
+    background: var(--lacasa-brass);
+}
+@media (min-width: 992px) {
+    .hero-wrapper {
+        padding-top: 12vh;
+    }
+    .hero-content-wrapper {
+        text-align: center;
+    }
+    .hero-content-header {
+        font-size: 58px;
+        line-height: 60px;
+    }
+    .hero-subcontent-header {
+        font-size: 52px;
+    }
+    .hero-content-description {
+        font-size: 32px;
+    }
+}
+
+
+/* CORTES CSS */
+.cortes-header {
+    gap: 24px;
+    line-height: 74px;
+}
+.cortes-header img {
+    margin-top: 6px;
+}
+.cortes-header-text {
+    font-size: 42px;
+    line-height: 44px;
+    color: #F5EDD8;
+    border-bottom: 2px solid #C9A060;
+    padding-bottom: 12px;
+}
+.cortes-subheader {
+    text-align: center;
+}
+.cortes-subheader-text {
+    font-size: 26px;
+    color: #C9A060;
+    line-height: 40px;
+}
+.cortes-grid-wrapper {
+    margin-top: 32px;
+}
+.cortes-grid-text {
+    min-height: 80px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 22px;
+    margin-top: 5px;
+    text-shadow: 1.5px 1.5px 1px #000;
+}
+.cortes-grid-brass-divider {
+    height: 10px;
+    background-image: url('../images/lacasa-brass-divider.png');
+    background-position: center;
+    width: 82%;
+    margin: auto;
+}
+@media (min-width: 992px) {
+    .cortes-wrapper {
+        padding-top: 80px !important;
+    }
+    .cortes-header-text {
+        font-size: 56px;
+        line-height: 72px;
+    }
+    .cortes-subheader-text {
+        font-size: 36px;
+    }
+    .cortes-grid-text {
+        font-size: 24px;
+        line-height: 30px;
+        min-height: 72px;
+    }
+}
+
+
+/* NOSOTROS CSS */
+.nosotros-left {
+    height: 40px;
+}
+/* Right side */
+.nosotros-right {
+    margin-top: 55px;
+}
+.nosotros-right-title {
+    font-size: 46px;
+    font-weight: 600;
+    color: #F5EDD8;
+    line-height: 55px;
+    margin-top: 220px;
+    margin-bottom: 32px;
+}
+.dark-brown-divider {
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    background-color: #230D02;
+}
+.nosotros-right-subtitle {
+    color: #230D02;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-top: 8px;
+}
+/* Message */
+.nosotros-right-message {
+    color: #230D02;
+    font-size: 18px;
+    width: 100%;
+    margin: 12px auto;
+    font-weight: 500;
+}
+.nosotros-view-story-inside .btn-primary:hover {
+    color: #C9A060;
+}
+/* Modal backdrop */
+.modal-backdrop.show {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+@media (min-width: 992px) {
+    .nosotros-wrapper {
+        background-image: url('../images/lacasa-argentina-nosotros-background.png') !important;
+    }
+    .nosotros-right-title {
+        font-size: 50px;
+        line-height: 100px;
+        padding-top: 0px;
+        margin-bottom: 10px;
+        color: #230D02;
+    }
+    .nosotros-right-subtitle {
+        color: #b63903;
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .nosotros-right-message {
+        font-size: 28px;
+        line-height: 32px;
+        width: 75%;
+    }
+}
+
+
+
+
+/* MENU CSS */
+.menu-header {
+    gap: 24px;
+    line-height: 74px;
+}
+.menu-header-text {
+    font-size: 32px;
+    line-height: 32px;
+    padding-bottom: 10px;
+    color: #442818;
+    border-bottom: 2px solid #442818;
+}
+.menu-subheader-text {
+    font-size: 22px;
+    color: #442818;
+    line-height: 28px;
+    text-align: center;
+}
+.menu-item-title {
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #442818;
+    width: 90%;
+    margin: auto;
+    border-bottom: 2px solid #442818;
+}
+.menu-item-subtitle {
+    font-size: 13px;
+    color: #b63903;
+    text-shadow: 1px 1px 0.5px #000;
+}
+.menu-item-image img {
+    max-height: 250px;
+}
+.menu-view-more-outside {
+    max-width: 255px;
+    margin: auto;
+    height: 48px;
+    border: 1px solid #C9A060;
+    border-bottom: 2px solid #C9A060;
+    background-color: #30150a;
+    padding: 4px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.6);
+}
+.menu-view-more-inside {
+    background: linear-gradient(to bottom, #442818 0%, #1A1007 100%);
+    border: 2px dashed #C9A060;
+    border-bottom: 1px dashed #C9A060;
+    line-height: 34px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1px #000;
+}
+@media (min-width: 992px) {
+    .menu-wrapper {
+        padding-top: 68px;
+        background-repeat: no-repeat;
+    }
+    .menu-header-text {
+        font-size: 56px;
+        line-height: 60px;
+        padding-bottom: 24px;
+    }
+    .menu-subheader-text {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .menu-item-subtitle {
+        font-size: 24px;
+    }
+}
+
+
+/* EVENTOS CSS */
+.eventos-wrapper {
+    /* Flip background */
+    
+}
+.eventos-container {
+    width: 100%;
+    /* Flip content back to normal */
+    transform: scaleX(-1);
+}
+.eventos-left-title {
+    font-size: 44px;
+    font-weight: 600;
+    color: #230D02;
+    line-height: 55px;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+.eventos-left .dark-brown-divider {
+    width: 80%;
+    margin: auto;
+}
+.eventos-left-subtitle {
+    color: #b63903;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+    margin-top: 8px;
+    text-shadow: 1px 1px 0.5px #000;
+}
+.eventos-left-message {
+    color: #F5EDD8;
+    font-size: 28px;
+    width: 75%;
+    margin: 12px auto;
+    font-weight: 500;
+}
+.eventos-right {
+    min-height: 0vh;
+}
+@media (min-width: 992px) {
+    .eventos-left-title {
+        font-size: 50px;
+        line-height: 100px;
+    }
+    .eventos-left-message {
+        color: #230D02;
+    }
+    .eventos-right {
+        min-height: 70vh;
+    }
+}
+
+
+/* RESERVA CSS*/
+.reserva-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    align-items: cover;
+    background-image: url(../images/lacasa-argentina-cortes-background.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: bottom;
+    padding-top: 90px;
+}
+.reserva-content-section {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+}
+.reserva-map-container {
+    background-image: url(../images/lacasa-map-frame.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 26px 28px 0px 26px;
+    box-shadow: 20px 16px 28px rgba(0, 0, 0, 0.6);
+}
+.reserva-map-container iframe {
+    width: 100%;
+    height: 280px;
+    border: 0px;
+}
+.reserva-map-photo-section {
+    position: relative;
+    top: -35px;
+    left: 5px;
+}
+.reserva-map-photo-section img {
+    width: 43%;
+}
+.reserva-info-section {
+    background-image: url(../images/lacasa-reserva-parchmant-bkgd.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: #442818;
+    padding-bottom: 50px;
+    max-width: 436px;
+    margin: auto;
+}
+.reserva-body-section {
+    margin-top: 24px;
+    padding: 0px 54px;
+}
+.reserva-title {
+    font-size: 36px;
+}
+.reserva-subtitle {
+    font-size: 21px;
+}
+.reserva-phone-text,
+.reserva-phone-number,
+.reserva-address-title,
+.reserva-address {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.reserva-phone-number,
+.reserva-address {
+    margin-bottom: 10px;
+}
+.reserva-phone-text,
+.reserva-address-title,
+.reserva-horas-title {
+    margin-top: 10px;
+}
+.reserva-horas-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+.reserva-horas {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.reserva-closed {
+    font-style: italic;
+    font-size: 16px;
+}
+@media (min-width: 992px) {
+    .reserva-content-section {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 46px;
+    }
+    .reserva-info-section {
+        width: 40%;
+    }
+    .reserva-map-container {
+        background-size: contain;
+        padding: 52px 44px 0px 44px;
+    }
+    .reserva-map-container iframe {
+        height: 504px;
+    }
+}
+
+
+/* SOCIAL CSS */
+.social-wrapper {
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    /*min-height: 100vh;*/
+    align-items: center;
+    background-image: url(../images/lacasa-argentina-menu-background.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: -75px;
+    padding-top: 68px;
+    z-index: 10;
+}
+.social-container {
+    justify-content: center;
+    max-width: 1280px;
+    margin: auto;
+    gap: 24px;
+    line-height: 74px;
+}
+
+
+/* FOOTER CSS */
+#footer-section {
+    font-family: 'Raleway', sans-serif;
+}
+.footer-wrapper {
+    max-width: 1280px;
+    margin: auto;
+    padding: 40px 0px;
+}
+.footer-container {
+    margin-bottom: 26px;
+    color: #F5EDD8;
+}
+.footer-links {
+    display: none;
+}
+.footer-links,
+.footer-social {
+    color: #C9A060;
+    width: 100%;
+}
+.footer-info {
+    text-align: center;
+    width: 100%;
+}
+.footer-info .title {
+    color: #C9A060;
+}
+.footer-links-title {
+    font-size: 18px;
+    color: #C9A060;
+    margin-bottom: 8px;
+}
+.footer-links a {
+    color: #F5EDD8;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    color: #C9A060;
+}
+.footer-social {
+    text-align: center;
+    font-size: 18px;
+}
+.footer-social-icon-wrapper {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    margin-top: 12px;
+    flex-direction: row;
+}
+.instagram a,
+.facebook a,
+.x a {
+    color: #F5EDD8;
+}
+.instagram a:hover,
+.facebook a:hover,
+.x a:hover {
+    color: #C9A060;
+}
+.footer-copyright {
+    font-size: 13px;
+    color: #F5EDD8;
+}
+@media (min-width: 992px) {
+    .footer-container {
+        justify-content: space-between;
+    }
+    .footer-info {
+        text-align: left;
+        width: auto;
+    }
+    .footer-links {
+        display: inline-block;
+        width: auto;
+    }
+    .footer-social {
+        text-align: right;
+        width: auto;
+    }
+    .footer-social-icon-wrapper {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+}
+
+
+/* Modals */
+.modal-content {
+    background-image: url(../images/lacasa-reserva-parchmant-bkgd.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #230D02;
+}
+.modal-header {
+    padding: 25px 35px 0px;
+    border-bottom: 0px;
+}
+.modal-header .btn-close {
+    --bs-btn-close-opacity: 1.5;
+}
+.modal-title {
+    font-size: 28px;
+}
+.modal-body {
+    padding: 0px 45px;
+    font-size: 16px;
+}
+.modal-body img {
+    height: 18px;
+}
+.modal-body-content {
+    margin: 20px 0px 60px;
+}
+.modal-bottom {
+    background-image: url(../images/lacasa-reserva-parchmant-bkgd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 27px;
+}
+@media (min-width: 992px) {
+    .modal-body {
+        font-size: 20px;
+    }
+}
