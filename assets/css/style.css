@@ -586,33 +586,32 @@ nav {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    align-items: center;
+    align-items: cover;
     background-image: url(../images/lacasa-argentina-cortes-background.png);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: bottom;
     padding-top: 90px;
 }
 .reserva-content-section {
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    margin-top: 64px;
     max-width: 1280px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
 }
 .reserva-map-container {
     background-image: url(../images/lacasa-map-frame.png);
-    width: 59%;
     background-repeat: no-repeat;
-    background-size: contain;
-    padding: 52px 44px 0px 44px;
+    background-size: cover;
+    padding: 26px 28px 0px 26px;
     box-shadow: 20px 16px 28px rgba(0, 0, 0, 0.6);
 }
 .reserva-map-container iframe {
     width: 100%;
-    height: 504px;
-    border: 0px
+    height: 280px;
+    border: 0px;
 }
 .reserva-map-photo-section {
     position: relative;
@@ -626,23 +625,26 @@ nav {
     background-image: url(../images/lacasa-reserva-parchmant-bkgd.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 39%;
     text-align: center;
     color: #442818;
+    padding-bottom: 50px;
+    max-width: 436px;
+    margin: auto;
 }
 .reserva-body-section {
     margin-top: 40px;
     padding: 0px 54px;
 }
 .reserva-title {
-    font-size: 48px;
-} 
+    font-size: 36px;
+}
 .reserva-divider {
     height: 12px;
     display: flex;
     justify-content: center;
-} 
-.reserva-divider-left, .reserva-divider-right {
+}
+.reserva-divider-left,
+.reserva-divider-right {
     width: 33%;
     align-self: center;
 }
@@ -664,32 +666,56 @@ nav {
     background: linear-gradient(to right, #230D02 40%, transparent 100%);
 }
 .reserva-subtitle {
-    font-size: 26px;
-    margin-bottom: 12px;
+    font-size: 21px;
+    margin: 12px 0px;
 }
-.reserva-phone-text, .reserva-phone-number,
-.reserva-address-title, .reserva-address {
-    font-size: 24px;
-    line-height: 32px;
+.reserva-phone-text,
+.reserva-phone-number,
+.reserva-address-title,
+.reserva-address {
+    font-size: 20px;
+    line-height: 26px;
     font-weight: 500;
 }
-.reserva-phone-number, .reserva-address {
-    margin-bottom: 22px;
+.reserva-phone-number,
+.reserva-address {
+    margin-bottom: 10px;
 }
-.reserva-phone-text, .reserva-address-title, .reserva-horas-title {
+.reserva-phone-text,
+.reserva-address-title,
+.reserva-horas-title {
     margin-top: 10px;
 }
 .reserva-horas-title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 .reserva-horas {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
 }
 .reserva-closed {
     font-style: italic;
     font-size: 16px;
+}
+@media (min-width: 992px) {
+    .reserva-content-section {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 46px;
+    }
+    .reserva-info-section {
+        width: 40%;
+    }
+    .reserva-map-container {
+        background-size: contain;
+        padding: 52px 44px 0px 44px;
+    }
+    .reserva-map-container iframe {
+        height: 504px;
+    }
 }
 
 
@@ -715,8 +741,6 @@ nav {
     gap: 24px;
     line-height: 74px;
 }
-
-
 
 
 /* FOOTER CSS */
