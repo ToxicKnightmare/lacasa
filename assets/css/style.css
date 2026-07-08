@@ -497,55 +497,45 @@ nav {
 
 /* EVENTOS CSS */
 .eventos-wrapper {
-    display: flex;
-    justify-content: center;
-    position: relative;
     width: 100%;
     min-height: 100vh;
-    align-items: center;
-    background-image: url(../images/lacasa-argentina-nosotros-background.png);
+    background-image: url('../images/lacasa-argentina-nosotros-background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
     padding-top: 32px;
+
+    /* Flip background */
     transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
 }
 .eventos-container {
     width: 100%;
+    /* Flip content back to normal */
     transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-}
-.eventos-left {
-    width: 50%;
-    min-height: 70vh;
-    text-align: center;
 }
 .eventos-left-title {
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 600;
-    color: #230D02;
-    line-height: 100px
+    color: #F5EDD8;
+    line-height: 55px;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    text-shadow: 1px 1px 0.5px #000;
 }
 .eventos-left .dark-brown-divider {
     width: 80%;
     margin: auto;
 }
 .eventos-left-subtitle {
-    color: #b63903;
+    color: #F5EDD8;
     font-size: 36px;
     font-weight: 500;
     line-height: 46px;
     margin-top: 8px;
+    text-shadow: 1px 1px 0.5px #000;
 }
 .eventos-left-message {
-    color: #230D02;
+    color: #F5EDD8;
     font-size: 28px;
     width: 75%;
     margin: 12px auto;
@@ -557,30 +547,39 @@ nav {
     height: 28px;
     margin-top: 12px;
 }
-.eventos-graphic-divider-left {
+.eventos-graphic-divider-left,
+.eventos-graphic-divider-right {
     width: 33%;
     align-self: center;
 }
 .eventos-graphic-divider-left div {
     height: 2px;
-    width: 100%;
     background: linear-gradient(to left, #230D02 40%, transparent 100%);
-}
-.eventos-graphic-divider-center {
-    margin: 0 4px;
-}
-.eventos-graphic-divider-right {
-    width: 33%;
-    align-self: center;
 }
 .eventos-graphic-divider-right div {
     height: 2px;
-    width: 100%;
     background: linear-gradient(to right, #230D02 40%, transparent 100%);
 }
-.eventos-right {
-    width: 50%;
+.eventos-graphic-divider-center img {
+    height: 28px;
 }
+.eventos-right {
+    min-height: 70vh;
+}
+@media (min-width: 992px) {
+    .eventos-left-title {
+        font-size: 50px;
+        line-height: 100px;
+        color: #230D02;
+    }
+    .eventos-left-subtitle {
+        color: #b63903;
+    }
+    .eventos-left-message {
+        color: #230D02;
+    }
+}
+
 
 /* RESERVA CSS*/
 .reserva-wrapper {
