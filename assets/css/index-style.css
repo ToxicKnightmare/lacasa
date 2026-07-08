@@ -445,17 +445,17 @@ nav {
     padding: 0px 54px;
 }
 .reserva-title {
-    font-size: 36px;
+    font-size: 32px;
 }
 .reserva-subtitle {
-    font-size: 21px;
+    font-size: 18px;
 }
 .reserva-phone-text,
 .reserva-phone-number,
 .reserva-address-title,
 .reserva-address {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 500;
 }
 .reserva-phone-number,
@@ -474,7 +474,7 @@ nav {
 .reserva-horas {
     font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 18px;
     margin-bottom: 20px;
 }
 .reserva-closed {
@@ -532,6 +532,7 @@ nav {
     max-width: 1280px;
     margin: auto;
     padding: 40px 0px;
+    overflow: hidden;
 }
 .footer-container {
     margin-bottom: 26px;
