@@ -8,6 +8,14 @@
     background-color: transparent;
     border: none;
 }
+.hide-mobile {
+    display: none;
+}
+@media (min-width: 992px) {
+    .hide-mobile {
+        display: inline-block;
+    }
+}
 /* NAV CSS */
 nav {
     width: 100%;
